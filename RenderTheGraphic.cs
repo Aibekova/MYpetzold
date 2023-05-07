@@ -4,11 +4,11 @@ namespace Petzold.RenderTheGraphic
 {     
     class RenderTheGraphic : Window     
     {         
-        [STAThread]         
+        [STAThread]   //используется один поток      
         public static void Main()         
         {             
             Application app = new Application();             
-            app.Run(new RenderTheGraphic());         
+            app.Run(new RenderTheGraphic());   //запуск      
         }         
         public RenderTheGraphic()         
         {             
